@@ -1,0 +1,19 @@
+/**
+ * Project - Cover
+ */
+
+.cover {
+  position: absolute;
+  top: 62.5vw;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% - 62.5vw);
+  margin: auto;
+  background-image: url("./assets/bgRepeat.svg");
+
+  @media (min-width: breakpoint("md")) {
+    top: 100vh;
+    height: calc(100% - 100vh);
+  }
+}

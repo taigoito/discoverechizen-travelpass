@@ -18,6 +18,7 @@ html {
 }
  
 body {
+  position: relative;
   margin: 0; // Remove the margin in all browsers
   background-color: $bodyBg;
   color: $bodyColor;

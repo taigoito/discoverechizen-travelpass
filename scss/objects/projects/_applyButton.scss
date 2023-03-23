@@ -1,0 +1,50 @@
+/**
+ * Apply Button
+ */
+
+.applyButton {
+  @include button();
+  position: relative;
+  width: 100%;
+  display: block;
+  border-radius: space(3);
+  background-color: themeColor("secondary");
+  color: themeColor("primaryDark");
+  font-weight: 700;
+  font-size: min(4.32vw, 1.5rem);
+
+  &.--foot {
+    width: 100%;
+    max-width: 36rem;
+    padding: space(3) 0;
+  }
+
+  &__inner {
+    @media (min-width: breakpoint("md")) {
+      padding-left: space(5);
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    margin-top: space(2);
+  }
+
+  &__apply::after {
+    @media (min-width: breakpoint("md")) {
+      content:"";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 3.75rem;
+      height: 2rem;
+      margin: auto space(3);
+      background: url("./assets/pennant.svg") no-repeat center center;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

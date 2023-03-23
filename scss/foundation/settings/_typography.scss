@@ -1,18 +1,18 @@
 // Typography
 
 // 固有のフォント設定
-$fontFamilySansSerif:  "游ゴシック", "Yu Gothic", sans-serif;
-$fontFamilySerif:      "游明朝", "Yu Mincho", serif;
-$fontWeightSansSerif:  500; // 游ゴシック固有
-$fontWeightSerif:      400;
-//$fontFamilySansSerif:  "Noto Sans JP", sans-serif;
+//$fontFamilySansSerif:  "游ゴシック", "Yu Gothic", sans-serif;
+//$fontFamilySerif:      "游明朝", "Yu Mincho", serif;
+//$fontWeightSansSerif:  500; // 游ゴシック固有
+//$fontWeightSerif:      400;
+$fontFamilySansSerif:  "Noto Sans JP", sans-serif;
 //$fontFamilySerif:      "Noto Serif JP", serif;
-//$fontWeightSansSerif:  400;
+$fontWeightSansSerif:  400;
 //$fontWeightSerif:      400;
 
 // フォントサイズ
 $fontSizes:            (
-  xs:                    .75rem,
+  xs:                    0.75rem,
   sm:                    0.875rem,
   nr:                    1rem,
   md:                    1.17rem,
@@ -54,4 +54,4 @@ $smallLetterSpacing:   0.04rem;
 
 // リンク文字の装飾
 $linkDecoration:       none;
-$linkHoverDecoration:  underline;
+$linkHoverDecoration:  none;

@@ -3,7 +3,60 @@
  */
 
 .footer {
-  padding: space(5);
-  @include background("primary");
-  text-align: center;
+  &__image {
+    @include container("md");
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 18rem;
+    margin: auto;
+  }
+
+  &__book {
+    width: 16.875rem;
+    height: 28.125rem;
+    margin: auto;
+    padding: 3rem;
+
+    @media (min-width: breakpoint("md")) {
+      position: absolute;
+      top: 0;
+      left: 3rem;
+      z-index: 1;
+      bottom: 0;
+    }
+
+    img {
+      box-shadow: 6px 6px 6px themeColor("dark");
+      transform: rotate(9deg);
+    }
+  }
+
+  &__issue, &__cooperation {
+    margin: 9rem 0;
+    text-align: center;
+  }
+
+  &__heading {
+    margin: space(3) auto;
+    color: themeColor("darker");
+    font-size: min(3.36vw, 0.875rem);
+  }
+
+  &__fukui {
+    color: themeColor("quaternary");
+    font-weight: 700;
+    font-size: min(3.36vw, 0.875rem);
+  }
+
+  &__fukuiGoodmark {
+    width: 6rem;
+    margin: space(3) auto;
+  }
+
+  &__logo {
+    width: 18rem;
+    margin: space(3) auto;
+  }
 }

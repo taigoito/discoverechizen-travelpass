@@ -1,0 +1,77 @@
+/**
+ * Project - Intro
+ */
+
+.intro {
+  @extend %__section;
+
+  &__container {
+    @extend %__sectionContainer;
+  }
+
+  &__content {
+    @include row();
+  }
+
+  &__lead {
+    @include col(5, true, "md");
+    font-weight: 700;
+    font-size: min(4.32vw, 1.5rem);
+
+    p {
+      max-width: 30rem;
+      margin: 0 -#{$gutter};
+
+      @media (min-width: breakpoint("md")) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__image {
+    @include col(3);
+    @include col(2, true, "md");
+    padding: 3rem;
+
+    img {
+      box-shadow: 6px 6px 6px themeColor("dark");
+      transform: rotate(9deg);
+    }
+  }
+
+  &__passport {
+    padding: space(4) 0;
+  }
+
+  &__passover {
+    margin: space(3) -#{space(3)};
+    font-size: min(3.36vw, 0.875rem);
+    text-align: center;
+  }
+
+  &__passlimit {
+    margin: space(3) auto;
+    font-size: min(3.84vw, 1rem);
+    text-align: center;
+  }
+
+  &__passnote {
+    margin: space(3) auto;
+    font-weight: 700;
+    font-size: min(3.84vw, 1rem);
+    text-align: center;
+  }
+
+  &__passterms {
+    list-style-type: square;
+    max-width: 33.75rem;
+    margin: space(3) auto;
+    padding: 0 1rem;
+    font-size: min(3.36vw, 0.875rem);
+    text-align: justify;
+  }
+
+  &__passterm {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,52 @@
+/**
+ * Project - Collecting
+ */
+
+.collecting {
+  @extend %__section;
+
+  &__container {
+    @extend %__sectionContainer;
+  }
+
+  &__heading {
+    margin: space(3) -#{space(1)};
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+
+    span {
+      font-size: 80%;
+
+      &::before, &::after {
+        content: "\\";
+        padding: 0 1rem;
+        font-family: Roboto, Arial, sans-serif;
+        font-weight: 100;
+        font-size: 3rem;
+        vertical-align: sub;
+      }
+
+      &::after {
+        content: "/";
+      }
+    }
+  }
+
+  &__subheading {
+    margin-bottom: space(3);
+    font-size: min(3.36vw, 0.875rem);
+    text-align: center;
+  }
+
+  &__stampWrap {
+    position: relative;
+  }
+
+  &__stampLabel {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 25%;
+  }
+}

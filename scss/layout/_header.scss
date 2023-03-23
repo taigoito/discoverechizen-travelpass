@@ -2,18 +2,33 @@
  * Layout - Header
  */
 
-$headerHeight: 4.5rem;
-
 .header {
-  height: $headerHeight;
+  @include row();
+  background-color: themeColor("secondary");
 
-  &__inner {
-    height: 100%;
-    background-color: $bodyBg;
+  @media (min-width: breakpoint("md")) {
+    min-height: 100vh;
   }
 
-  &__container {
+  &__content {
     @include container();
-    height: 100%;
+    padding-top: space(4);
+    padding-bottom: space(4);
+  }
+
+  &__titleWrap {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 5% 50% 5% 18%;
+  }
+
+  &__title {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  &__subTitle {
+    grid-row: 1;
+    grid-column: 5;
   }
 }

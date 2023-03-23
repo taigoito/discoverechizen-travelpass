@@ -4,7 +4,6 @@
 @import "foundation/settings/colorSystem";
 @import "foundation/settings/gridSystem";
 @import "foundation/settings/typography";
-@import "foundation/settings/components";
 
 // Mixins
 @import "foundation/mixins/background";
@@ -19,31 +18,26 @@
 // Layout
 @import "layout/container";
 @import "layout/header";
-@import "layout/gNav";
 @import "layout/main";
 @import "layout/footer";
 
 // Components
 @import "objects/components/button";
-@import "objects/components/cover";
-@import "objects/components/drawerMenu";
-@import "objects/components/embed";
 @import "objects/components/form";
-@import "objects/components/icon";
-@import "objects/components/preloader";
-@import "objects/components/responsiveColor";
-@import "objects/components/slider";
 @import "objects/components/table";
 
 // Projects
-@import "objects/projects/hero";
 @import "objects/projects/section";
-@import "objects/projects/postItem";
-@import "objects/projects/postList";
+@import "objects/projects/intro";
+@import "objects/projects/collecting";
+@import "objects/projects/areamap";
+@import "objects/projects/applyButton";
+@import "objects/projects/cover";
 
 // Utility
 @import "objects/utilities/flex";
 @import "objects/utilities/flexItem";
 @import "objects/utilities/spacing";
 @import "objects/utilities/text";
+@import "objects/utilities/valid";
 @import "objects/utilities/visibility";

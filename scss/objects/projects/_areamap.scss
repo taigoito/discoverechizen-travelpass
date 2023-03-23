@@ -1,0 +1,85 @@
+/**
+ * Project - Area Map
+ */
+
+.areamap {
+  @extend %__section;
+  
+  &__heading {
+    margin-bottom: space(3);
+    text-align: center;
+
+    img {
+      width: 12rem;
+    }
+  }
+
+  &__description {
+    margin-bottom: space(3);
+    font-size: min(3.36vw, 0.875rem);
+    text-align: center;
+  }
+
+  &__map {
+    max-width: breakpoint("lg");
+    margin: space(3) auto space(5);
+
+    @media (min-width: breakpoint("lg")) {
+      padding-left: map-get($containerPad, "lg");
+      padding-right: map-get($containerPad, "lg");
+    }
+  }
+
+  &__items {
+    @include listUnstyled();
+    @include container();
+    @include row(space-between, flex-start);
+    padding: 0;
+
+    @media (min-width: breakpoint("lg")) {
+      padding-left: min(2%, 20px);
+      padding-right: min(2%, 20px);
+    }
+  }
+
+  &__item {
+    @include col();
+    @include col(4, true, "md");
+    margin: space(4) auto;
+
+    @media (min-width: breakpoint("md")) {
+      max-width: 50%;
+    }
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+
+  &__itemImage {
+    text-align: center;
+  }
+
+  &__itemTitle {
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__itemDesc {
+    font-size: min(3.36vw, 0.875rem);
+    text-align: justify;
+    line-height: 1.5;
+    
+    &:first-of-type {
+      font-weight: 700;
+    }
+
+    &.--primary {
+      color: themeColor("darker");
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

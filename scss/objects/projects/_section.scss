@@ -2,29 +2,10 @@
  * Project - Section
  */
 
-.section {
-  &__inner {
-    padding-top: space(4);
-    padding-bottom: space(4);
-    background-color: $bodyBg;
+%__section {
+  padding: space(4) 0;
+}
 
-    .section:nth-child(odd) & {
-      background-color: themeColor("lighter");
-    }
-  }
-
-  &__heading {
-    margin: space(3) 0;
-    text-align: center;
-  }
-
-  &__container {
-    @include container();
-    padding-top: space(2) + space(3);
-    padding-bottom: space(4);
-
-    &.--sm {
-      @include container("sm");
-    }
-  }
+%__sectionContainer {
+  @include container();
 }

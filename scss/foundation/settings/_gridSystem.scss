@@ -6,34 +6,34 @@ $rootFontSize:   16px;
 $fixedFontSize:  3.84vw; // 4vw以下推奨
 
 // 基準幅
-$gridBase:       6rem;
+$gridBase:       5.625rem;
 
 // 画像アスペクト比 (高さ/幅)
 $imgAspectRatio: 3 / 4;
 
 // 各BP別用途
-// xs: 1カラム (4グリッド: 24rem)
+// xs: 1カラム (4グリッド: 22.5rem)
 // 文字サイズを流動させ、レイアウトを固定
 //
-// sm: 1〜2カラム (6グリッド: 36rem)
+// sm: 1〜2カラム (6グリッド: 33.75rem)
 // コンテナ幅を拡げ、文字サイズをpxに切り替え固定
 // このサイズのデバイスは少ないため、ほとんどxsのレイアウトを継承する
 // 用途はせいぜい下層ページで、メディアと文章の使用くらいに留める
 // WordPressブロックエディタの都合上、BPを600pxで設置するのが望ましい
 //
-// md: 1〜3カラム (9グリッド: 54rem)
+// md: 1〜3カラム (8グリッド: 45rem)
 // 画像:文章を1:2の割合で表示するリストレイアウトが可能
 //
-// lg: 1～4カラム (12グリッド: 72rem)
+// lg: 1～4カラム (10グリッド: 56.25rem)
 // 幅広ラッパー使用時に4カラムレイアウトが可能
 // "md"からflexItemを伸長させる使い方を推奨
 
 // ブレイクポイント (BP)
-// padding: clamp(12px, 2%, 24px)を左右に付与し、コンテナが収まる
+// padding: 5%を左右に付与し、コンテナが収まる
 $breakpoints:    (
-  sm:              600px, // コンテナ576px WordPressブロックエディタのBP
-  md:              900px, // コンテナ864px theme.json settings.layout.contentSize の値
-  lg:              1200px // コンテナ1152px theme.json settings.layout.wideSize の値
+  sm:              600px, // コンテナ540px
+  md:              800px, // コンテナ720px
+  lg:              1000px // コンテナ900px
 );
 
 // 余白定義
@@ -58,11 +58,11 @@ $spacingValues:  (
 
 // ガター
 // 行を生成することで、コンテナの端とコンテンツ間が、それぞれ1.5rem空く仕様
-$gutter:         space();
+$gutter:         30px;
 $containerPad:   (
   sm:              $gutter,
-  md:              clamp(#{$gutter}, 2%, 18px),
-  lg:              clamp(#{$gutter}, 2%, 24px)
+  md:              clamp(#{$gutter}, 5%, 40px),
+  lg:              clamp(#{$gutter}, 5%, 50px)
 );
 
 // コンテナ生成
