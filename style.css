@@ -178,7 +178,7 @@ button, input, select, textarea {
 }
 @media (min-width: 800px) {
   .header {
-    min-height: 100vh;
+    height: min(100vh, 48rem);
   }
 }
 .header__content {
@@ -434,6 +434,7 @@ button, input, select, textarea {
 .intro__lead {
   font-weight: 700;
   font-size: min(4.32vw, 1.5rem);
+  letter-spacing: 0.08em;
 }
 @media (min-width: 800px) {
   .intro__lead {
@@ -595,11 +596,12 @@ button, input, select, textarea {
 .areamap__itemTitle {
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 0.08em;
 }
 .areamap__itemDesc {
   font-size: min(3.36vw, 0.875rem);
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 .areamap__itemDesc:first-of-type {
   font-weight: 700;

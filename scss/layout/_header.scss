@@ -7,7 +7,7 @@
   background-color: themeColor("secondary");
 
   @media (min-width: breakpoint("md")) {
-    min-height: 100vh;
+    height: min(100vh, 48rem);
   }
 
   &__content {

@@ -17,6 +17,7 @@
     @include col(5, true, "md");
     font-weight: 700;
     font-size: min(4.32vw, 1.5rem);
+    letter-spacing: 0.08em;
 
     p {
       max-width: 30rem;
